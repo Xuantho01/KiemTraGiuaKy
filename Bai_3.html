@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+</head>
+<body>
+<h3>Tính tổng các số lẽ trong một mảng cho trước</h3>
+<script>
+       let year = new Date().getFullYear();
+       let birthday = prompt("Nhập vào năm sinh của bạn: ");
+       function old() {
+           if (birthday > year) {
+               alert("Không hợp lệ!");
+           }
+           else{
+                   document.write("Tuổi của bạn là: " + (year - birthday));
+               }
+       }
+       old();
+</script>
+</body>
+</html>

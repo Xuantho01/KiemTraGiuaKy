@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+</head>
+<body>
+<h3>Tính tổng các giá trị trên đường chéo chính của ma trận</h3>
+<script>
+    document.write("Ma trận vuông:" + "<br>");
+    let Matrix = [[1,2,3],
+                  [4,5,6],
+                  [7,8,9]];
+    let total = 0;
+    for(let i = 0; i < Matrix.length; i++){
+        for(let j = 0; j < Matrix[i].length;j++){
+            document.write(Matrix[i][j] + ' ');
+        }
+        document.write("<br>");
+    }
+    for(let i = 0; i < Matrix.length; i++){
+        for(let j = 0; j < Matrix[i].length;j++){
+            if(i==j){
+                total+=Matrix[i][j];
+            }
+        }
+    }
+    document.write("Tổng các phần tử trên đường chéo chính là: "+ total);
+</script>
+</body>
+</html>
